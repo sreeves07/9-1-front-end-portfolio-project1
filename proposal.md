@@ -8,4 +8,3 @@
 - As a user, information about crypto is retrieved from an API so that I can see a random crypto on the landing page
 - As a user, I can type in an input box and search for a specific currency based on the users preference, (e.g. bitcoin) so that a new stream of information(price today, highs and lows) will appear based on that theme.
 - As a user, if I try to submit with no entry in the input box, I see a message on the screen telling me to enter a value to search so that I cannot submit without entering a value
-- 
