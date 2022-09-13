@@ -9,26 +9,52 @@
     <title>Front-End Portforlio Project</title>
 </head>
 <body>
-    <section class="layout">
-    <header class="header">
-        <h1>Get a Coin
+    <div class="header">
+    <header>
+        <h1>Get a Coin From 
             <span>
-                From <a href='http://api.coincap.io/v2/assets'>api.coincap.io</a>
+                <a href='http://api.coincap.io/v2/assets'>api.coincap.io</a>
+                <h1>
+                  <a href="./bio.html">About</a>
+                </h1>
               </span>
         </h1>
+        
     </header>
+</div>
 
+  <div class="primary-content">
     <main class="main">
         <p class="error hidden message"></p>
         <form>
           <label>
-            Enter a Crypto's rank below...
-            <input id="crypto-rank" type="text" name="id" min='1' max='100'/>
+            Enter a Cryptocurrency below...
+            <input id="crypto-rank" type="text" name="id" min='1' max='100' placeholder="eg:tether,binance-coin"/>
           </label>
           <input id='search' type="submit" value="Add Coin"></input>
         </form>
         <section class="coin"></section>
       </main>
-    </section>
+   
+      <div class="sidebar">
+        <ul>
+          <li>
+            <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="bit">
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+            </li>
+            <a href="https://www.forbes.com/advisor/investing/cryptocurrency/what-is-cryptocurrency/" target="_blank">Forbes Article</a>
+          </li>
+          <li>
+            <a href="https://www.nerdwallet.com/article/investing/cryptocurrency" target="_blank">NerdWallet Article</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Footer goes here.</div>
+    </div>
 </body>
 </html>
