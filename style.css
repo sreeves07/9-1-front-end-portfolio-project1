@@ -2,18 +2,9 @@
     display: none;
 }
 
-.divs {
-    display: flex;
-}
 
 button {
     border: 2px solid red;
     background-color: lightcoral;
 }
 
-span {
-    display: inline-block;
-    padding: 5px;
-    margin: 10px;
-    border: 2px solid black;
-}
