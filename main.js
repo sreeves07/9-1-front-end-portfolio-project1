@@ -28,7 +28,7 @@ function fetchData() {
         <p><strong>Symbol:</strong> ${symbol}</p>\n
         <p><strong>Rank:</strong> ${rank}</p>\n
         <p><strong>Current Price:</strong> $ ${dollarPrice}</p>\n
-        <p><strong>Percent Change (24 hour limit):</strong> ${percentChange}</p>\n
+        <p><strong>Percent Change (24 hours):</strong> ${percentChange}</p>\n
         <p><strong>Market Cap:</strong> $ ${marketCapPrice}</p>
         <p><strong>More Info:</strong> <a href=${link}>More Info</a></p>\n`
         
@@ -73,12 +73,15 @@ form.addEventListener('submit', (event) => {
             <p><strong>Current Price:</strong> $${dollarPrice}</p>\n
             <p><strong>Percent Change (24 hour limit):</strong> ${percentChange}</p>\n
             <p><strong>Market Cap:</strong> $${marketCapPrice}</p>
-            <p><strong>More Info:</strong> <a href=${link}>More Info</a></p>\n`
+            <p><strong>More Info:</strong> <a href='${link}' target='_blank'>More Info</a></p>\n`
             
             id.value = '' 
+
+
         })
         .catch((error) => {
-            console.log(error)})
+            console.log(error)
+        })
     }
     
 })

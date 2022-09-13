@@ -30,11 +30,7 @@ header h1 span {
     
 }
 
-section {
-    /* box-sizing: content-box; */
-    border: 2px solid red;
-    text-align: center;
-}
+
 
 .footer {
     background: yellow;
@@ -54,45 +50,13 @@ section {
 a:hover {
     color: #FFFAFB;
 } 
+
+@media screen and (max-width: 360px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
  
 
-
-/* .header {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr;
-    background: #FF595E;
-    border-bottom: 3px solid #565656;
-    color: #FFFAFB;
-    margin: 5px;
-    padding: 5px;
-} */
-
-
-
-
-
-/* .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 300px;
-    width: 300px;
-} */
-
-
-
-/* .hidden {
-    display: none;
-} */
-
-/* section {
-    justify-content: center;
-    align-content: center;
-} */
-
-
-/* button {
-    border: 2px solid red;
-    background-color: lightcoral;
-} */
 
