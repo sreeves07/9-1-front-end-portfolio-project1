@@ -1,3 +1,7 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr;
@@ -5,11 +9,19 @@
 }
 
 header h1 span {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
-    
+    text-align: right;
 }
 
+#link {
+    margin-left: 375px;
+    font-size: 20px;
+    color: aquamarine;
+}
+
+#link:hover {
+    color: #FFFAFB;
+}
 
 .sidebar {
     background: #2d2d2d;
@@ -17,6 +29,17 @@ header h1 span {
     text-align: center;
 }
 
+ol {
+    color: blanchedalmond;
+}
+
+ul {
+    color: blanchedalmond;
+}
+
+h3 {
+   color: #efeaea; 
+}
 
 .main {
     background: #ececec;
@@ -29,7 +52,7 @@ header h1 span {
   
 .primary-content {
     display: grid;
-    grid-template-columns: 3.5fr .5fr;
+    grid-template-columns: 3.5fr .75fr;
 }
 
 #search:hover {
@@ -40,12 +63,12 @@ a:hover {
     color: #FFFAFB;
 } 
 
-@media screen and (max-width: 360px) {
-    .column {
-      width: 100%;
-      display: block;
+@media (max-width: 600px) {
+    .primary-content {
+        width: 100%;
+        display: block;
     }
-  }
+}
  
 
 

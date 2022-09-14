@@ -6,12 +6,12 @@ const section = document.querySelector('section')
 const error = document.querySelector('.error')
 const searched = document.getElementById('search')
 const sidebar = document.querySelector('.sidebar')
+const aboutLink = document.querySelector('#link')
 
 function fetchData() {
     fetch(`https://api.coincap.io/v2/assets/bitcoin`)
     .then((res) => res.json())
     .then((data) => {
-        console.log(data)
 
         const name = data.data.name
         const rank = data.data.rank
@@ -45,6 +45,7 @@ fetchData()
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
+    const idValLow = id.value.toLowerCase()
 
     if (id.value === '') {
         error.classList.remove('hidden')
@@ -52,7 +53,7 @@ form.addEventListener('submit', (event) => {
     } else {
         error.classList.add('hidden')
 
-        fetch(`https://api.coincap.io/v2/assets/${id.value}`)
+        fetch(`https://api.coincap.io/v2/assets/${idValLow}`)
         .then((res) => res.json())
         .then((data) => {
             console.log(data)
@@ -75,7 +76,7 @@ form.addEventListener('submit', (event) => {
             <p><strong>Current Price:</strong> $${dollarPrice}</p>\n
             <p><strong>Percent Change (24 hours):</strong> ${percentChange}</p>\n
             <p><strong>Market Cap:</strong> $${marketCapPrice}</p>\n
-            
+
             <br>
             <section><img style="height:400px" src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="bit"></section>`
             
