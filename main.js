@@ -5,6 +5,7 @@ const button = document.querySelector('button')
 const section = document.querySelector('section')
 const error = document.querySelector('.error')
 const searched = document.getElementById('search')
+const sidebar = document.querySelector('.sidebar')
 
 function fetchData() {
     fetch(`https://api.coincap.io/v2/assets/bitcoin`)
@@ -22,8 +23,7 @@ function fetchData() {
         let dollarUSLocale = Intl.NumberFormat('en-US')
         let marketCapPrice = dollarUSLocale.format(marketCap)
         let dollarPrice = dollarUSLocale.format(price)
-        
-
+    
         section.innerHTML = `<h2>${name}</h2>\n
         <p><strong>Symbol:</strong> ${symbol}</p>\n
         <p><strong>Rank:</strong> ${rank}</p>\n
@@ -31,6 +31,7 @@ function fetchData() {
         <p><strong>Percent Change (24 hours):</strong> ${percentChange}</p>\n
         <p><strong>Market Cap:</strong> $${marketCapPrice}</p>
         <p><strong>More Info:</strong> <a href=${link}>More Info</a></p>\n`
+
         
         id.value = '' 
     })
@@ -46,7 +47,7 @@ form.addEventListener('submit', (event) => {
 
     if (id.value === '') {
         error.classList.remove('hidden')
-        error.innerText = 'Must input a correct Pokemon ID.'
+        error.innerText = 'Must input a coin name.'
     } else {
         error.classList.add('hidden')
 
@@ -71,16 +72,21 @@ form.addEventListener('submit', (event) => {
             <p><strong>Symbol:</strong> ${symbol}</p>\n
             <p><strong>Rank:</strong> ${rank}</p>\n
             <p><strong>Current Price:</strong> $${dollarPrice}</p>\n
-            <p><strong>Percent Change (24 hour limit):</strong> ${percentChange}</p>\n
+            <p><strong>Percent Change (24 hours):</strong> ${percentChange}</p>\n
             <p><strong>Market Cap:</strong> $${marketCapPrice}</p>
             <p><strong>More Info:</strong> <a href='${link}' target='_blank'>More Info</a></p>\n`
             
             id.value = '' 
+            error.innerText = ''
 
+            // const html = data.da9ta.map(coin => {
+            //     return `<p> ${coin.rank}. ${coin.name}</p>`
+            // })
+            // console.log(html)
 
         })
-        .catch((error) => {
-            console.log(error)
+        .catch((fetchError) => {
+            error.innerText = `must input correct coin name. Check spelling.`
         })
     }
     

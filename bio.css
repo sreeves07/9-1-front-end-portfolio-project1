@@ -6,14 +6,13 @@ body {
 html {
     box-sizing: border-box;
 }
-  
 
   
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+.column { 
+    display: flex;
+    margin: 30px;
+    padding: 10px 10px;
+    justify-content: space-evenly;
 }
   
 .card {
@@ -22,7 +21,7 @@ html {
 }
 
 .card img {
-    height: 300px;
+    height: 290px;
 }
   
 .about-section {
