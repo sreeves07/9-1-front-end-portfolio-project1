@@ -30,8 +30,9 @@ function fetchData() {
         <p><strong>Current Price:</strong> $${dollarPrice}</p>\n
         <p><strong>Percent Change (24 hours):</strong> ${percentChange}</p>\n
         <p><strong>Market Cap:</strong> $${marketCapPrice}</p>
-        <p><strong>More Info:</strong> <a href=${link}>More Info</a></p>\n`
-
+        
+        <br>
+        <section><img style="height:400px" src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="bit"></section>`
         
         id.value = '' 
     })
@@ -73,16 +74,13 @@ form.addEventListener('submit', (event) => {
             <p><strong>Rank:</strong> ${rank}</p>\n
             <p><strong>Current Price:</strong> $${dollarPrice}</p>\n
             <p><strong>Percent Change (24 hours):</strong> ${percentChange}</p>\n
-            <p><strong>Market Cap:</strong> $${marketCapPrice}</p>
-            <p><strong>More Info:</strong> <a href='${link}' target='_blank'>More Info</a></p>\n`
+            <p><strong>Market Cap:</strong> $${marketCapPrice}</p>\n
+            
+            <br>
+            <section><img style="height:400px" src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="bit"></section>`
             
             id.value = '' 
             error.innerText = ''
-
-            // const html = data.da9ta.map(coin => {
-            //     return `<p> ${coin.rank}. ${coin.name}</p>`
-            // })
-            // console.log(html)
 
         })
         .catch((fetchError) => {
