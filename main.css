@@ -48,8 +48,11 @@ h3 {
     height: 750px;
     text-align: center;
     box-sizing: content-box;
-    border: 2px solid red;
     padding: 15px;
+}
+
+img {
+    width: 50%;
 }
   
 .primary-content {
@@ -64,6 +67,7 @@ h3 {
 a:hover {
     color: #FFFAFB;
 } 
+
 
 @media (max-width: 600px) {
     .primary-content {

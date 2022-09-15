@@ -39,8 +39,6 @@ function fetchData() {
         console.log(error)})
 }
 
-fetchData()
-
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -87,4 +85,6 @@ form.addEventListener('submit', (event) => {
     }
     
 })
+
+fetchData()
 
