@@ -17,7 +17,7 @@ function fetchData() {
         const rank = data.data.rank
         const symbol = data.data.symbol
         const percentChange = Number(data.data.changePercent24Hr).toFixed(2)
-        const price = Number(data.data.priceUsd).toFixed(2)
+        const price = Number(data.data.priceUsd).toFixed(5)
         const marketCap = Number(data.data.marketCapUsd).toFixed(2)
         let dollarUSLocale = Intl.NumberFormat('en-US')
         let marketCapPrice = dollarUSLocale.format(marketCap)
