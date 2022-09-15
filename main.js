@@ -16,7 +16,6 @@ function fetchData() {
         const name = data.data.name
         const rank = data.data.rank
         const symbol = data.data.symbol
-        const link = data.data.explorer
         const percentChange = Number(data.data.changePercent24Hr).toFixed(2)
         const price = Number(data.data.priceUsd).toFixed(2)
         const marketCap = Number(data.data.marketCapUsd).toFixed(2)
@@ -45,7 +44,7 @@ fetchData()
 
 form.addEventListener('submit', (event) => {
     event.preventDefault()
-    const idValLow = id.value.toLowerCase()
+    const idValLow = id.value.trim().split(' ').join('-').toLowerCase()
 
     if (id.value === '') {
         error.classList.remove('hidden')
@@ -56,14 +55,12 @@ form.addEventListener('submit', (event) => {
         fetch(`https://api.coincap.io/v2/assets/${idValLow}`)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data)
 
             const name = data.data.name
             const rank = data.data.rank
             const symbol = data.data.symbol
-            const link = data.data.explorer
             const percentChange = Number(data.data.changePercent24Hr).toFixed(2)
-            const price = Number(data.data.priceUsd).toFixed(2)
+            const price = Number(data.data.priceUsd).toFixed(5)
             const marketCap = Number(data.data.marketCapUsd).toFixed(2)
             let dollarUSLocale = Intl.NumberFormat('en-US')
             let marketCapPrice = dollarUSLocale.format(marketCap)
