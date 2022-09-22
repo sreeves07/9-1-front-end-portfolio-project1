@@ -1,14 +1,17 @@
 # 9-1-front-end-portfolio-project1
 
+<hr>
+
+## Link to deployed website
+<hr>
+Below is the link to the deployed site... \n
+
+ <a href="https://sreeves07.github.io/9-1-front-end-portfolio-project1/index.html"> Coin Stats Website</a>
+
 ## Get cyrptocurrency information from CoinCap Api
 <hr>
 
 This webpage allows the user to search for a crypto coin from the CoinCap Api by inputting the coin name into the search form. Information pertaining to the coin is then printed onto the screen. 
-
-## Link to deployed website
-Below is the link to the deployed site... \n
-
- <a href="https://sreeves07.github.io/9-1-front-end-portfolio-project1/index.html"> Coin Stats Website</a>
 
 ![CoinCap Api](https://user-images.githubusercontent.com/98179886/190450746-b5117960-7293-47ea-bfdd-f1eb313ed82e.png)
 
