@@ -8,7 +8,7 @@ This webpage allows the user to search for a crypto coin from the CoinCap Api by
 ## Link to deployed website
 Below is the link to the deployed site... \n
 
- <a href="https://sreeves07.github.io/9-1-front-end-portfolio-project1/index.html"> To Coin Page </a>
+ <a href="https://sreeves07.github.io/9-1-front-end-portfolio-project1/index.html"> Coin Stats Website</a>
 
 ![CoinCap Api](https://user-images.githubusercontent.com/98179886/190450746-b5117960-7293-47ea-bfdd-f1eb313ed82e.png)
 
